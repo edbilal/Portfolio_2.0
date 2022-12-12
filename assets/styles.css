@@ -167,6 +167,7 @@ main > div:nth-child(2) > div:nth-child(2) > div {
    color : var(--text-1) ;
    text-decoration : none ;
    font-style : italic ;
+   font-family : Kodchasan
 }
 main > div:nth-child(2) > div:nth-child(2) > a:hover {
   text-decoration : underline ;
@@ -236,21 +237,43 @@ main > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div {
   }
 }
 
+@font-face{
+  font-family : 'Karla';
+  src : url('./fonts/Karla-Medium.ttf') format('truetype') ;
+}
+
+@font-face{
+  font-family : 'Kodchasan';
+  src : url('./fonts/Kodchasan-MediumItalic.ttf') format('truetype') ;
+}
+
+@font-face{
+  font-family : 'Mega';
+  src : url('./fonts/LexendMega-Regular.ttff') format('truetype') ;
+}
+
+@font-face{
+  font-family : 'Montserat';
+  src : url('./fonts/Montserrat-Regular.ttf') format('truetype') ;
+}
 
 h1 {
   font-size : 18px ;
-  color : var(--text-1)
+  color : var(--text-1) ;
+  font-family : Karla ;
 }
 h2{
   font-size : 16px ;
   font-style : italic ;
-  color : var(--text-2)
+  color : var(--text-2) ;
+  font-family : Kodchasan
 }
 
 h3{
   transition-duration : 1s ;
   font-size : 13px ;
-  color : var(--text-2)
+  color : var(--text-2) ;
+  font-family : monospace
 }
 main > div:nth-child(1) > div:nth-child(2) > div ,
 p{
@@ -258,7 +281,8 @@ p{
   line-height : 15px ;
   transition-delay : .2s ;
   transition-duration : .5s ;
-  color : var(--text-2)
+  color : var(--text-2) ;
+  font-family : Montesrat
 }
 p{
   width : 60% ;
@@ -281,7 +305,8 @@ h4 {
   font-family : sans-serif ;
   font-style : italic ;
   letter-spacing : 2px ;
-  color : var(--text-1)
+  color : var(--text-1) ;
+  font-family : Mega
 }
   @media only screen and (max-width : 1000px){
     h4 {
