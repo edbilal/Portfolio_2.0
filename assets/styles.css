@@ -163,7 +163,11 @@ main > div:nth-child(2) > div:nth-child(2) > div {
     display : none
   }
 }
- main > div:nth-child(2) > div:nth-child(2) > a {
+@font-face{
+  font-family : 'Kodchasan';
+  src : url('./fonts/Kodchasan-MediumItalic.ttf') format('truetype') ;
+}
+main > div:nth-child(2) > div:nth-child(2) > a {
    color : var(--text-1) ;
    text-decoration : none ;
    font-family : Kodchasan
@@ -242,11 +246,6 @@ main > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div {
 }
 
 @font-face{
-  font-family : 'Kodchasan';
-  src : url('./fonts/Kodchasan-MediumItalic.ttf') format('truetype') ;
-}
-
-@font-face{
   font-family : 'Mega';
   src : url('./fonts/LexendMega-Regular.ttff') format('truetype') ;
 }
@@ -298,11 +297,11 @@ p{
 }
 
 h4 {
+  font-family : Mega ;
   width : 25% ;
   font-size : 17px ;
   letter-spacing : 2px ;
   color : var(--text-1) ;
-  font-family : Mega
 }
   @media only screen and (max-width : 1000px){
     h4 {
