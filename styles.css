@@ -244,7 +244,11 @@ p{
   font-size : 11px ;
   line-height : 15px ;
   transition-delay : .2s ;
-  transition-duration : .5s
+  transition-duration : .5s ;
+}
+p{
+  width : 60% ;
+  align-self : center ;
 }
 @media only screen and (max-width : 1150px){
   p , h3 {
