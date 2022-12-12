@@ -1,6 +1,7 @@
 :root{
   --background : #181818 ;
-  --bg : #212121 ;
+  --bg : rgba(100,100,100,.02) ;
+  --b : rgba(100,100,100,0.05) ;
   --border : #484848 ;
   --text-1 : #878787 ;
   --text-2 : #676767 ;
@@ -93,6 +94,7 @@ main > div:nth-child(2) > div:nth-child(1) > div {
   align-items : flex-start ;
   justify-content : center ;
   padding : 0 2vw ;
+  background : var(--bg)
 }
 
 
@@ -137,17 +139,19 @@ main > div:nth-child(2) > div:nth-child(2) {
   height : 100% ;
   width : 60% ;
   align-items : center ;
+  background : var(--b)
 }
 main > div:nth-child(2) > div:nth-child(2) > div {
   position : absolute ;
-  height : 15em ;
+  height : 12em ;
   width : 25em ;
   z-index : -1 ;
   background-image : url('./imgs/ss-screen1_edited.png') ;
   background-size : cover ;
   background-position : center ;
   transition-delay : .2s ;
-  transition-duration : .5s
+  transition-duration : .5s ;
+  filter : blur(4px) ;
 }
 @media only screen and (max-width : 1150px) {
   main > div:nth-child(2) > div:nth-child(2) > div {
