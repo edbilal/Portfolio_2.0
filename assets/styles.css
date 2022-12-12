@@ -166,7 +166,6 @@ main > div:nth-child(2) > div:nth-child(2) > div {
  main > div:nth-child(2) > div:nth-child(2) > a {
    color : var(--text-1) ;
    text-decoration : none ;
-   font-style : italic ;
    font-family : Kodchasan
 }
 main > div:nth-child(2) > div:nth-child(2) > a:hover {
@@ -302,8 +301,6 @@ p{
 h4 {
   width : 25% ;
   font-size : 17px ;
-  font-family : sans-serif ;
-  font-style : italic ;
   letter-spacing : 2px ;
   color : var(--text-1) ;
   font-family : Mega
