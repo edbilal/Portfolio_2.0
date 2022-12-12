@@ -1,3 +1,11 @@
+::root{
+  --background : #181818 ;
+  --bg : #212121 ;
+  --border : #484848 ;
+  --text-1 : #878787 ;
+  --text-2 : #676767 ;
+}
+
 *{
   margin : 0px ;
   padding : 0px ;
@@ -6,8 +14,7 @@
 body{
   height: 100vh ;
   width : 100% ;
-  background : #030303 ;
-  color : rgb(100,100,100)
+  background : var(--background) ;
 }
 main {
   height : 100% ;
@@ -80,7 +87,7 @@ main > div:nth-child(2){
 main > div:nth-child(1) > div , 
 main > div:nth-child(2) > div:nth-child(2) , 
 main > div:nth-child(2) > div:nth-child(1) > div {
-  border : 1px solid rgb(60,60,60) ;
+  border : 1px solid var(--border) ;
   transition-duration : .5s ;
   flex-direction : column ;
   align-items : flex-start ;
@@ -103,7 +110,7 @@ main > div:nth-child(1) > div:nth-child(2){
   row-gap : 1vh ;
 }
 main > div:nth-child(1) > div:nth-child(2) > div {
-  border : 1px solid rgb(50,50,50) ;
+  border : 1px solid var(--bg) ;
   min-height : 30px ;
   width : 30px ;
   border-radius : 50% ;
@@ -133,13 +140,12 @@ main > div:nth-child(2) > div:nth-child(2) {
 }
 main > div:nth-child(2) > div:nth-child(2) > div {
   position : absolute ;
-  height : 12em ;
-  width : 22em ;
+  height : 15em ;
+  width : 25em ;
   z-index : -1 ;
-  background-image : url('https://images.unsplash.com/photo-1494022299300-899b96e49893?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzA4NDIyMDE&ixlib=rb-4.0.3&q=80') ;
+  background-image : url('./imgs/ss-screen1_edited.png') ;
   background-size : cover ;
   background-position : center ;
-  filter : blur(2px) ;
   transition-delay : .2s ;
   transition-duration : .5s
 }
@@ -154,7 +160,7 @@ main > div:nth-child(2) > div:nth-child(2) > div {
   }
 }
  main > div:nth-child(2) > div:nth-child(2) > a {
-   color : rgb(100,100,100) ;
+   color : var(--text-1) ;
    text-decoration : none ;
    font-style : italic ;
 }
@@ -229,15 +235,18 @@ main > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div {
 
 h1 {
   font-size : 18px ;
+  color : var(--text-1)
 }
 h2{
   font-size : 16px ;
   font-style : italic ;
+  color : var(--text-2)
 }
 
 h3{
   transition-duration : 1s ;
-  font-size : 13px
+  font-size : 13px ;
+  color : var(--text-2)
 }
 main > div:nth-child(1) > div:nth-child(2) > div ,
 p{
@@ -245,6 +254,7 @@ p{
   line-height : 15px ;
   transition-delay : .2s ;
   transition-duration : .5s ;
+  color : var(--text-2)
 }
 p{
   width : 60% ;
@@ -267,6 +277,7 @@ h4 {
   font-family : sans-serif ;
   font-style : italic ;
   letter-spacing : 2px ;
+  color : var(--text-1)
 }
   @media only screen and (max-width : 1000px){
     h4 {
