@@ -111,8 +111,10 @@ main > div:nth-child(1) > div:nth-child(2){
   height : 70% ;
   row-gap : 1vh ;
 }
+main > div:nth-child(1) > div:nth-child(2) > *:hover {
+  cursor:pointer }
 main > div:nth-child(1) > div:nth-child(2) > div {
-  border : 1px solid var(--bg) ;
+  border : 1px solid var(--b) ;
   min-height : 30px ;
   width : 30px ;
   border-radius : 50% ;
