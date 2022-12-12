@@ -276,7 +276,8 @@ h3{
   transition-duration : 1s ;
   font-size : 12px ;
   color : var(--text-2) ;
-  font-family : Kodchasan
+  font-family : monospace ;
+  font-weight : 100 ;
 }
 main > div:nth-child(1) > div:nth-child(2) > div ,
 p{
